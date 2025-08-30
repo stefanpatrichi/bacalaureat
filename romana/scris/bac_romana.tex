@@ -1,0 +1,77 @@
+\documentclass[a4paper]{book}
+
+\usepackage{graphicx}
+\usepackage[left=1in,right=1in,top=1.25in,bottom=1.25in,headsep=30pt,heightrounded]{geometry}
+\usepackage[romanian]{babel}
+\usepackage{indentfirst}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\setlength{\headheight}{14.5pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[LO]{\small\nouppercase{\rightorleftmark}}
+\fancyhead[RE]{\small\nouppercase{\leftmark}}
+\renewcommand\chaptermark[1]{\markboth{\thechapter\hspace{0.25cm} #1}{}}
+\renewcommand\sectionmark[1]{\markright{\thesection\hspace{0.4cm}#1}{}}
+\renewcommand{\headrulewidth}{0pt}
+
+\makeatletter
+\newcommand{\rightorleftmark}{%
+\begingroup\protected@edef\x{\rightmark}%
+\ifx\x\@empty
+ \endgroup\leftmark
+\else
+ \endgroup\rightmark
+\fi}
+\makeatother
+
+\begin{document}
+\begin{titlepage}
+\frontmatter
+    \begin{center}
+        \phantom{\tiny a}
+   { \Huge
+    \vfill
+    \textbf{Bacalaureat\\Limba și literatura română\\Proba scrisă}
+    \vfill
+    }
+    \end{center}
+    
+    \begin{flushright}
+    \large
+dr. Anca Evelina \textsc{Cîrligeanu} \\
+Ștefan \textsc{Patrichi}
+\end{flushright}
+\end{titlepage}
+
+\tableofcontents
+
+\mainmatter
+\chapter{Concepte operaționale}
+\section{Genul epic}
+\section{Genul liric}
+\section{Genul dramatic}
+
+\chapter{Eseuri}
+\section{„Alexandru Lăpușneanul” de Costache Negruzzi}
+\section{„Povestea lui Harap-Alb” de Ion Creangă}
+% particularități stilistice ale narațiunii crengiste
+\section{„Moara cu noroc” de Ioan Slavici}
+\section{„Ion” de Liviu Rebreanu}
+\section{„Baltagul” de Mihail Sadoveanu}
+\section{„Ultima noapte de dragoste, întâia noapte de război” de Camil Petrescu}
+\section{„Maitreyi” de Mircea Eliade}
+\section{„Enigma Otiliei” de George Călinescu}
+\section{„Moromeții” de Marin Preda}
+\section{„O scrisoare pierdută” de Ion Luca Caragiale}
+\section{„Iona” de Marin Sorescu}
+\section{„Luceafărul” de Mihai Eminescu}
+\section{„Plumb” de George Bacovia}
+\section{„Eu nu strivesc corola de minuni a lumii” de Lucian Blaga}
+\section{„Testament” de Tudor Arghezi}
+\section{„Joc secund” de Ion Barbu}
+\section{„Aci sosi pe vremuri” de Ion Pillat}
+\section{„Leoaică tânără, iubirea” de Nichita Stănescu}
+\section{„Levantul” de Mircea Cărtărescu}
+\end{document}
